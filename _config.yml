@@ -1,4 +1,4 @@
 safe: true
 lsi: flase
 pygments: true
-root: "/"
+root: "/jekyll/"
