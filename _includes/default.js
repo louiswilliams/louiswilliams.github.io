@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	color = "#{{page.color}}"
 	$(".navitem").mouseenter(function() {
 		if (!isCurrentPage($(this).parent("a").attr("href"))) {
 			slideOut(this,100,35,250,25);

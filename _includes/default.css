@@ -86,7 +86,7 @@ p{
 }
 
 #content-wrap{
-	border-left: 10px solid #627D94;
+	border-left: 10px solid #4F90C7;
 	padding-top: 15px;
 	padding-bottom: 25px;
 	background: #C5C5C5;
@@ -99,7 +99,7 @@ p{
 	padding-left: 20px;
 	background: #FFFFFF;
 	min-height: 180px;
-	border-left: 10px solid #627D94;
+	border-left: 10px solid #{{ page.color}};
 }
 
 #navigation{
@@ -116,7 +116,7 @@ p{
 
 #navigation ul li.navitem{
 	line-height: 30px;
-	background: #627D94;
+	background: #4F90C7;
 	color: #FFFFFF;
 	padding-left: 50px;
 	margin-bottom: 4px;
@@ -125,7 +125,7 @@ p{
 
 #title{
 	margin-left: 0px;
-	background: #627D94;
+	background: #4F90C7;
 	width: 600px;
 	margin-bottom: 15px;
 	padding-left: 20px;
@@ -157,7 +157,7 @@ ul{
 	height: 37px;
 	width: 140px;
 	margin-bottom: 5px;
-	border-left: 10px solid #B33131;
+	border-left: 10px solid #4F90C7;
 }
 .contact-tile img{
 	float: left;
@@ -177,7 +177,7 @@ ul{
 	background: #E6E6E6;
 	width: 400px;
 	margin-bottom: 10px;
-	border-left: 10px solid #B33131;
+	border-left: 10px solid #4F90C7;
 }
 .project-tile img{
 	float: left;
@@ -198,3 +198,9 @@ ul{
 	padding: 8px;
 	width: 380px;
 }
+
+.nav-home{ background-color: #4F90C7 !important;}
+.nav-bio{ background-color: #41CA6D !important;}
+.nav-projects{ background-color: #CEAE49 !important;}
+.nav-resume{ background-color: #CE4444 !important;}
+.nav-contact{ background-color: #8551B6 !important;}
