@@ -62,7 +62,7 @@ p{
 	margin-right: auto;
 	width: 800px;
 	height: 100%;
-	background: url("/jekyll/images/Container-bottom-repeat.png") repeat-y center;
+	background: url("{{ site. root }}images/Container-bottom-repeat.png") repeat-y center;
 }
 
 #container{
@@ -73,13 +73,13 @@ p{
 }
 
 #container-top{
-	background: url("/jekyll/images/Container-top.png") no-repeat;
+	background: url("{{ site. root }}images/Container-top.png") no-repeat;
 	width: 600px;
 	height: 30px;
 	margin-left: 100px;
 }
 #container-bottom{
-	background: url("/jekyll/images/Container-bottom.png") no-repeat;
+	background: url("{{ site. root }}images/Container-bottom.png") no-repeat;
 	width: 600px;
 	height: 120px;
 	margin-left: 100px;
