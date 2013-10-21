@@ -155,13 +155,17 @@ ul{
 	padding: 3px;
 	background: #c5c5c5;
 	height: 33px;
-	width: 160px;
+	width: 140px;
+	margin-bottom: 5px;
 }
 .contact-tile img{
 	float: left;
+	height: 32px;
+	width: 32px;
 }
 .contact-tile div{
-	font-size: 12pt;
-	margin-left: 35px;
+	font-size: 13pt;
+	margin-left: 38px;
 	margin-top: 7px;
+	font-weight: bold;
 }
