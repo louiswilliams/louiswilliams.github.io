@@ -4,7 +4,7 @@ $(document).ready(function() {
 		if (!isCurrentPage($(this).parent("a").attr("href"))) {
 			slideOut(this,100,35,250,25);
 			$(this).mouseleave(function(){
-				slideIn(this,100,250);
+				slideIn(this,100,1000);
 			});
 		}
 	});
@@ -20,7 +20,7 @@ $(document).ready(function() {
 		slideOut(this,620,135,500,0);
 		// $(this).animate({"width": 755,},500);
 		$(this).mouseleave(function(){
-			slideIn(this,620,500);
+			slideIn(this,620,1000);
 		});
 	});
 
