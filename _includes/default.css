@@ -24,6 +24,9 @@ img.feature{
 	float: left;
 }
 
+img{
+	border: none;
+}
 p{
 	font-size: 11pt;
 	line-height: 20px;
@@ -155,7 +158,7 @@ ul{
 	padding: 5px;
 	background: #c5c5c5;
 	height: 37px;
-	width: 140px;
+	width: 300px;
 	margin-bottom: 5px;
 	border-left: 10px solid #4F90C7;
 }

@@ -25,10 +25,10 @@ $(document).ready(function() {
 	});
 
 	$(".contact-tile").mouseenter(function(){
-		slideOut(this,140,30,250,10);
+		slideOut(this,300,30,250,10);
 		// $(this).animate({"width": 755,},500);
 		$(this).mouseleave(function(){
-			slideIn(this,130,250);
+			slideIn(this,300,250);
 		});
 	});
 

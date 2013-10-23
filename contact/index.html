@@ -17,3 +17,24 @@ color: 8551B6
 		<div>LinkedIn</div>
 	</div>
 </a>
+<a href="mailto:#" target="_blank" id="emailview">
+	<div class="contact-tile">
+		<img src="{{ site.root }}images/email.png"/>
+		<div id="emaildisp">[Mouse over to display email]</div>
+	</div>
+</a>
+
+<script type="text/javascript">
+emailview = $("#emailview");
+emaildisp = $("#emaildisp");
+
+emailview.mouseover(function(){
+	if ($(this).attr("href") == "mailto:#"){
+		query = $.post("{{site.root}}getemail.php", {e: true});
+		query.done(function(data){
+			emailview.attr("href","mailto:" + data);
+			emaildisp.html(data);
+		});
+	}
+});
+</script>
