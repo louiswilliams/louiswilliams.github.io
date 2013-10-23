@@ -17,7 +17,7 @@ color: 8551B6
 		<div>LinkedIn</div>
 	</div>
 </a>
-<a href="mailto:#" target="_blank" id="emailview">
+<a href="#" target="_blank" id="emailview">
 	<div class="contact-tile">
 		<img src="{{ site.root }}images/email.png"/>
 		<div id="emaildisp">[Mouse over to display email]</div>
@@ -29,12 +29,31 @@ emailview = $("#emailview");
 emaildisp = $("#emaildisp");
 
 emailview.mouseover(function(){
-	if ($(this).attr("href") == "mailto:#"){
-		query = $.post("{{site.root}}getemail.php", {e: true});
+	if ($(this).attr("href") == "#"){
+		query = $.get("{{site.root}}getemail.html");
 		query.done(function(data){
-			emailview.attr("href","mailto:" + data);
-			emaildisp.html(data);
+			emailview.attr("href","mailto:" + unscramble(data));
+			emaildisp.html(unscramble(data));
 		});
 	}
 });
+
+var dict  = "abcdefghijklmnopqrstuvwxyz1234567890.:@";
+var crypt = "z6ld:2skn3c@hr9ip1qyoxgf48j7u.vmw50tbea";
+
+function scramble(text){
+	return map(text,dict,crypt);
+}
+function unscramble(text){
+	return map(text,crypt,dict);
+}
+function map(text, d, c){
+
+	result = "";
+	for (i=0;i<text.length;i++){
+		j = d.indexOf(text.charAt(i));
+		result += c[j];
+	}
+	return result;
+}
 </script>
