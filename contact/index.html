@@ -51,8 +51,11 @@ function map(text, d, c){
 
 	result = "";
 	for (i=0;i<text.length;i++){
+		console.log(text.charAt(i));
 		j = d.indexOf(text.charAt(i));
-		result += c[j];
+		if (j != -1) {
+			result += c[j];
+		}
 	}
 	return result;
 }
