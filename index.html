@@ -278,7 +278,7 @@
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="copyright">
-					<li>&copy; Louis Williams 2014 </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Louis Williams <span id="theyear"></span> </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</footer>
     <script type="text/javascript">
@@ -298,6 +298,7 @@
             event.preventDefault();
             showEmail();
         });
+        $("#theyear").html(new Date().getFullYear());
     });
     </script>
     <div id="email-modal" class="modal fade">
