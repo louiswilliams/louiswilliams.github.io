@@ -36,16 +36,16 @@
 	<body class="landing">
 
 		<!-- Banner -->
-			<section id="banner">
+			<section id="banner" itemscope itemtype="http://schema.org/Person">
                 <div class="picture" id="picture-me">
-                    <img src="images/me.jpg" />
+                    <a itemprop="url" href="http://louiswilliams.org"> <img alt="Louis Williams" src="images/me.jpg" /> </a>
                 </div>
-                <h2>Louis Williams</h2>
-                <p>[ hacker, thinker, engineer ]</p>
+                <h2 itemprop="name">Louis Williams</h2>
+                <p>
+                    <span itemprop="jobtitle">Computer Science student at Georgia Tech</span><br>
+                    <span itemprop="homeLocation">Atlanta, GA</span><br><br> 
+                </p>
                 <ul class="external">
-                    <a href="https://facebook.com/louis.williams.4" class="icon major fa-facebook" target="_blank">
-                        <span class="label">Facebook</span>
-                    </a>
                     <a href="http://github.com/louiswilliams" class="icon major fa-github" target="_blank">
                         <span class="label">Github</span>
                     </a>
@@ -60,36 +60,30 @@
 			</section>
 		<!-- Main -->
 			<section id="main" class="container">
-		
 				<section class="box special features">
 
                     <section>
                         <header class="major">
                         <a href="http://queueup.io/" target="_blank">
                             <span class="image"><img src="images/qup1.png" /></span>
-                            <span class="image"><img src="images/app.png" /></span>
+                            <span class="image"><img src="images/app.jpg" /></span>
                             <span class="image"><img src="images/qup2.png" /></span>
                         </a>
                             <h2>QueueUp</h2>
-                            <!-- <h4>MHacks Winter 2014, University of Michigan</h4> -->
+                            <h3></h3>
+                            <a target="_blank" style="border-bottom: 0" href="https://play.google.com/store/apps/details?id=org.louiswilliams.queueupplayer&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                              <img style="height: 3em" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" />
+                            </a>
+                            <p>QueueUp is a collaborative playlist streaming service. Anybody can create a playlist, use Spotify to stream from QueueUp, and invite friends to contribute in real time.</p>
+                        </header>
+
+                        <h5>
                             <a href="http://queueup.io/" target="_blank">
                                 QueueUp.io
                                 <i class="icon fa-external-link icon-inline"></i>
-                            </a>
-                            <h3></h3>
-                            <p>QueueUp is a collaborative playlist streaming service. Anybody can create a playlist, use Spotify to stream from QueueUp, and invite friends to contribute in real time.</p>
-                        </header>
-                        <h5>
+                            </a> |
                             <a href="https://github.com/louiswilliams/queueup-spotify" target="_blank">
                                 GitHub (Server)
-                                <i class="icon fa-external-link icon-inline"></i>
-                            </a> | 
-                            <a href="https://github.com/louiswilliams/queueup-spotify-client" target="_blank">
-                                GitHub (Node.js Player)
-                                <i class="icon fa-external-link icon-inline"></i>
-                            </a> | 
-                            <a href="https://github.com/louiswilliams/queueup-spotify-android" target="_blank">
-                                GitHub (Android Player)
                                 <i class="icon fa-external-link icon-inline"></i>
                             </a> | 
                             <a href="http://challengepost.com/software/queueup" target="_blank">
@@ -104,10 +98,6 @@
                                 <span class="image"><img src="images/oahu.png" alt="Oahu Logo" /></span>
                                 <h2>Oahu</h2>
                                 <h4>CalHacks Fall 2014, UC Berkeley</h4>
-                                <a href="http://oahujs.com/" target="_blank">
-                                    OahuJs.com
-                                    <i class="icon fa-external-link icon-inline"></i> 
-                                </a> 
                                 <h3></h3>
                                 <p>A distributed computing platform in Javascript built entirely through Chrome web browsers.</p>
                             </header>
@@ -219,8 +209,9 @@
 							<h3>Platforms</h3>
 							<ul class="alt">
                                 <li>Node.js</li>
-                                <li>Ruby on Rails</li>
                                 <li>Android</li>
+                                <li>Spark, Hadoop</li>
+                                <li>Ruby on Rails</li>
                             </ul>
 						</section>
 					</div>
@@ -229,7 +220,7 @@
                             <span class="icon major fa-language accent1"></span>
                             <h3>Languages</h3>
                             <ul class="alt">
-                                <li>Java / JavaScript / HTML5 / CSS3 / Ruby / C &amp; C++ / PHP / MySQL</li>
+                                <li>Java / JavaScript / C / HTML5 / CSS3 / Ruby / PHP / MySQL</li>
                                 <li>Spanish (intermediate)</li>
                             </ul>
                         </section>
@@ -237,7 +228,9 @@
                             <span class="icon major fa-book accent4"></span>
                             <h3>Coursework</h3>
                             <ul class="alt">
-                                <li>System and Networks</li>
+                                <li>Algorithms</li>
+                                <li>Machine Learning</li>
+                                <li>Systems and Networks</li>
                                 <li>Objects and Design</li>
                                 <li>Data Structures &amp; Algorithms</li>
                                 <li>Computer Organization</li>
@@ -246,27 +239,6 @@
                     </div>
 
 				</section>
-					
-				<div class="row">
-					<div class="6u 12u(2)">
-
-						<section class="box special">
-							<span class="image featured"><img src="images/adventure.jpg" alt="" /></span>
-							<h3>Adventure</h3>
-							<p class="left">I love exploring, hiking, and climbing. I studied in Barcelona in the Summer of 2014, where I had one of the best experiences of my life. I was able to travel to Switzerland and hike through the Swiss alps, which was an overwhelmingly beautiful experience.</p>
-						</section>
-						
-					</div>
-					<div class="6u 12u(2)">
-
-						<section class="box special">
-							<span class="image featured"><img src="images/photography.jpg" alt="" /></span>
-							<h3>Photography</h3>
-							<p class="left">Photography has been a passion of mine since I got my first 35mm camera in the 8th grade. I have since upgraded, but it's still an art that has the power to capture both my creative and technological personas. I took the photo in the banner of this site.</p>
-						</section>
-
-					</div>
-				</div>
 
 			</section>
 
