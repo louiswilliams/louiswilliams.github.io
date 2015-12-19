@@ -754,6 +754,25 @@
 				background: rgba(255,255,255,0.2);
 				transform: scale(1.1);
 			}
+		ul.external_links {
+			font-size: 1.2em;
+		}
+			ul.external_links a.icon {
+				color: #222;
+				padding: 8px;
+				cursor: pointer;
+				margin: 10px;
+				background: #ffffff;
+				transition: .1s ease-in-out;
+			}
+
+			ul.external_links a.icon span {
+				padding-left: 8px;
+			}
+
+			ul.external_links a.icon:hover{
+				background: rgba(255,255,255,0.75);
+			}
 
 		ul.actions {
 			cursor: default;
@@ -1296,26 +1315,15 @@
 /* Banner */
 
 	#banner {
-		background-attachment:
-			scroll,
-			fixed;
-		background-color: #666;
-		background-image:
-			url("images/overlay.png"),
-			url("../images/banner1.jpg");
-		background-position:
-			top left,
-			center center;
-		background-repeat:
-			repeat,
-			no-repeat;
-		background-size:
-			auto,
-			cover;
 		color: #fff;
 		padding: 6em 0 15em 0;
 		text-align: center;
 		height: 100%;
+		background-color: #666;
+		background-image: url("../images/banner.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
 		#banner :last-child {
