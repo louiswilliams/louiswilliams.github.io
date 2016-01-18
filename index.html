@@ -36,21 +36,22 @@
 	<body class="landing">
 
 		<!-- Banner -->
-			<section id="banner" itemscope itemtype="http://schema.org/Person">
+			<section id="banner" >
                 <div class="picture" id="picture-me">
-                    <a itemprop="url" href="http://louiswilliams.org"> <img alt="Louis Williams" src="images/me.jpg" /> </a>
+                    <a itemprop="url" href="/"> <img alt="Louis Williams" src="images/me.jpg" /> </a>
                 </div>
                 <h2 itemprop="name">Louis Williams</h2>
                 <p>
-                    <span itemprop="jobtitle">Computer Science student at Georgia Tech</span><br>
+                    <span itemprop="alternateName">KM4QDL</span><br>
+                    <span itemprop="jobtitle">Computer Science student</span> at <span itemprop="affiliation">Georgia Tech</span><br>
                     <span itemprop="homeLocation">Atlanta, GA</span><br><br> 
                 </p>
                 <ul class="external_links">
-                    <a href="http://github.com/louiswilliams" class="icon fa-github" target="_blank">
+                    <a href="https://github.com/louiswilliams" class="icon fa-github" target="_blank">
                         <span>Github</span>
                     </a>
 <!--
-                    <a href="#" id="blog-link" class="icon fa-rss">
+                    <a href="http://blog.louiswilliams.org" target="_blank" id="blog-link" class="icon fa-rss">
                         <span >Blog</span>
                     </a>
 -->
@@ -249,8 +250,7 @@
 			</section>
 
             <section id="cta">
-                <h2>Resume</h2>
-                <h4><a href="LouisWilliams.pdf" target="_blank" class="button">Download [PDF]</a></h4>
+                <h4><a alt="Resume" href="LouisWilliams.pdf" target="_blank" class="button">Resume [PDF]</a></h4>
 
             </section>
 		<!-- Footer -->
@@ -278,6 +278,22 @@
         });
         $("#theyear").html(new Date().getFullYear());
     });
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Louis Williams",
+      "url" : "https://louiswilliams.org",
+      "jobTitle": "Student",
+      "affiliation": "Georgia Tech",
+      "homeLocation": "Atlanta, GA",
+      "sameAs" : [
+        "https://github.com/louiswilliams",
+        "https://www.linkedin.com/pub/louis-williams/84/87/904",
+        "https://plus.google.com/+LouisWilliamsOfficial"
+      ]
+    }
     </script>
     <div id="email-modal" class="modal fade">
         <div class="modal-dialog">
